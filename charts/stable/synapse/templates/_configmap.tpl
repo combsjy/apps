@@ -117,6 +117,9 @@ data:
   {{- if not .Values.loadCustomConfig }}
   custom.yaml: |
     # PLACEHOLDER
+    {{- if not .Values.CustomConfigContent }}
+      {{ .Values.CustomConfigContent }}
+    {{- end }}
   {{- end }}
 
   {{ .Values.matrix.serverName }}.log.config: |

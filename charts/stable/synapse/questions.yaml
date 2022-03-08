@@ -90,6 +90,12 @@ questions:
           schema:
             type: boolean
             default: false
+        - variable: customConfigContent
+          label: "Custom Config Content"
+          description: "The content for custom.yaml"
+          schema:
+            type: string
+            default: "" 
 
   - variable: matrix
     group: "Container Configuration"
